@@ -26,9 +26,11 @@ export default function Page() {
               </Link>
             </nav>
           </div>
-          <Button variant="outline" className="ml-auto">
-            Resume
-          </Button>
+          <Link href="/images/Rishabh_Resume.pdf" target="_blank">
+            <Button variant="outline" className="ml-auto">
+              Resume
+            </Button>
+          </Link>
         </div>
       </header>
 
@@ -97,28 +99,28 @@ export default function Page() {
                 title="Book-My-Spot"
                 description="A movie ticket booking web application where users can book tickets for movies, built with Spring Boot and React."
                 image="/images/Screenshot 2025-05-08 124204.png"
-                link="https://github.com/CODEWITHRISHU2005/Spring_Boot/tree/main/BookMySpot_Microservices"
+                link="https://github.com/CODEWITHRISHU2005/BookMySpot"
                 tags={["Next.js", "React.js", "TypeScript", "Spring Boot", "Spring Security", "Spring Cloud", "O-Auth2", "PostgreSQL", "MySQL", "Redis", "RabbitMQ", "Docker", "CI/CD", "Microservices"]}
               />
               <ProjectCard
                 title="Google-Meet Clone"
                 description="The project aims to develop a video conferencing application inspired by Google Meet, utilizing Spring Boot microservices architecture and WebRTC technology for real-time communication."
                 image="/images/Screenshot 2025-05-05 094216.png"
-                link="https://github.com/CODEWITHRISHU2005/Spring_Boot/tree/main/GoogleMeetClone_Microservices"
+                link="https://github.com/CODEWITHRISHU2005/GoogleMeetClone_Microservices"
                 tags={["React.js", "Next.js", "TypeScript", "Spring Cloud", "Spring Boot", "Spring Security", "O-Auth2", "WebRTC", "WebSocket", "PostgreSQL", "MySQL", "Redis", "RabbitMQ", "Docker", "CI/CD", "Microservices"]}
               />
               <ProjectCard
                 title="AI Chat Interface"
                 description="An AI-powered chat interface with natural language processing capabilities comparing different LLM models to test accuracy of different models."
                 image="/images/Screenshot 2025-05-05 185527.png"
-                link="https://github.com/CODEWITHRISHU2005/Spring_Boot/tree/main/FlashGPT_4.5"
+                link="https://github.com/CODEWITHRISHU2005/Spring_AI"
                 tags={["OpenAI", "Anthropic", "Ollama", "Mistral", "Meta", "Next.js", "TailwindCSS", "React.js", "Spring Boot", "Spring-AI", "Java"]}
               />
               <ProjectCard
                 title="Snap-Buy"
                 description="A full-stack e-commerce platform built with Spring Boot, MySQL, Node.js and React."
                 image="/images/Screenshot 2025-04-09 215254.png"
-                link="https://github.com/CODEWITHRISHU2005/Spring_Boot/tree/main/RestQuickHire"
+                link="https://github.com/CODEWITHRISHU2005/SnapBuy"
                 tags={["Spring Boot", "Java", "MySQL", "Node.js", "React.js", "TailwindCSS"]}
               />
               <ProjectCard
