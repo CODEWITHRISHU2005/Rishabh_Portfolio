@@ -96,13 +96,6 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="Book-My-Spot"
-                description="A movie ticket booking web application where users can book tickets for movies, built with Spring Boot and React."
-                image="/images/Screenshot 2025-05-08 124204.png"
-                link="https://github.com/CODEWITHRISHU2005/BookMySpot"
-                tags={["Next.js", "React.js", "TypeScript", "Spring Boot", "Spring Security", "Spring Cloud", "O-Auth2", "PostgreSQL", "MySQL", "Redis", "RabbitMQ", "Docker", "CI/CD", "Microservices"]}
-              />
-              <ProjectCard
                 title="Google-Meet Clone"
                 description="The project aims to develop a video conferencing application inspired by Google Meet, utilizing Spring Boot microservices architecture and WebRTC technology for real-time communication."
                 image="/images/Screenshot 2025-05-05 094216.png"
@@ -110,25 +103,25 @@ export default function Page() {
                 tags={["React.js", "Next.js", "TypeScript", "Spring Cloud", "Spring Boot", "Spring Security", "O-Auth2", "WebRTC", "WebSocket", "PostgreSQL", "MySQL", "Redis", "RabbitMQ", "Docker", "CI/CD", "Microservices"]}
               />
               <ProjectCard
+                title="Book-My-Spot"
+                description="A movie ticket booking web application where users can book tickets for movies, built with Spring Boot and React."
+                image="/images/Screenshot 2025-05-08 124204.png"
+                link="https://github.com/CODEWITHRISHU2005/BookMySpot"
+                tags={["Next.js", "React.js", "TypeScript", "Spring Boot", "Spring Security", "Spring Cloud", "O-Auth2", "PostgreSQL", "MySQL", "Redis", "RabbitMQ", "Docker", "CI/CD", "Microservices"]}
+              />
+              <ProjectCard
                 title="AI Chat Interface"
                 description="An AI-powered chat interface with natural language processing capabilities comparing different LLM models to test accuracy of different models."
                 image="/images/Screenshot 2025-05-05 185527.png"
                 link="https://github.com/CODEWITHRISHU2005/Spring_AI"
-                tags={["OpenAI", "Anthropic", "Ollama", "Mistral", "Meta", "Next.js", "TailwindCSS", "React.js", "Spring Boot", "Spring-AI", "Java"]}
+                tags={["OpenAI", "Anthropic", "Ollama", "Mistral", "Meta", "Next.js", "TailwindCSS", "React.js", "Spring Boot","Spring Security", "OAuth2","MongoDB", "Spring-AI", "Java"]}
               />
               <ProjectCard
                 title="Snap-Buy"
                 description="A full-stack e-commerce platform built with Spring Boot, MySQL, Node.js and React."
                 image="/images/Screenshot 2025-04-09 215254.png"
                 link="https://github.com/CODEWITHRISHU2005/SnapBuy"
-                tags={["Spring Boot", "Java", "MySQL", "Node.js", "React.js", "TailwindCSS"]}
-              />
-              <ProjectCard
-                title="Task Management App"
-                description="A real-time task management application with new Java Vaddin Framework use to create UI in Java."
-                image="/images/Screenshot 2025-05-01 230109.png"
-                link="https://github.com/CODEWITHRISHU2005/Spring_Boot/tree/main/Task_Manager/.vscode"
-                tags={["Vaadin", "Spring Boot", "Java", "PostgreSQL"]}
+                tags={["Spring Boot", "Spring Security", "Java", "MySQL", "Node.js", "React.js", "TailwindCSS","O-Auth2","Jwt", "OTT","Spring Boot", "Spring Security"]}
               />
             </div>
           </div>
