@@ -95,12 +95,12 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard
-                title="Google-Meet Clone"
-                description="The project aims to develop a video conferencing application inspired by Google Meet, utilizing Spring Boot microservices architecture and WebRTC technology for real-time communication."
-                image="/images/Screenshot 2025-05-05 093932.png"
-                link="https://github.com/CODEWITHRISHU2005/GoogleMeetClone_Microservices"
-                tags={["React.js", "Next.js", "TypeScript", "Spring Cloud", "Spring Boot", "Spring Security", "O-Auth2", "Jwt", "OTT", "WebRTC", "WebSocket", "MongoDB", "MySQL", "Redis", "RabbitMQ", "Docker", "CI/CD", "Microservices"]}
+            <ProjectCard
+                title="SnapBuy"
+                description="A Backend e-commerce platform with lot's of feature that align with the real world e-commerce platform"
+                image="/images/Screenshot 2025-04-09 215254.png"
+                link="https://github.com/CODEWITHRISHU2005/SnapBuy"
+                tags={["Spring Boot", "Spring Security", "O-Auth2", "Jwt", "OTT", "MySQL", "Swagger API", "Docker", "AWS CodePipeline", "AWS CodeBuild", "CI/CD", "AWS RDS", "AWS ECS", "AWS ECR", "AWS Fargate"]}
               />
               <ProjectCard
                 title="FlashGPT_4.0"
@@ -108,14 +108,7 @@ export default function Page() {
                 image="/images/Screenshot 2025-06-11 201235.png"
                 link="https://github.com/CODEWITHRISHU2005/Spring_AI"
                 tags={["OpenAI", "Anthropic", "Ollama", "Mistral", "Meta", "Spring Boot", "Spring Security", "OAuth2", "OTT", "MySQL", "Spring-AI", "Next.js", "React.js", "TypeScript"]}
-              />
-              <ProjectCard
-                title="SnapBuy"
-                description="A full-stack e-commerce platform built with Spring Boot, MySQL, Node.js and React."
-                image="/images/Screenshot 2025-04-09 215254.png"
-                link="https://github.com/CODEWITHRISHU2005/SnapBuy"
-                tags={["Spring Boot", "Spring Security", "O-Auth2", "Jwt", "OTT", "MySQL", "Next.js", "React.js", "Typescript"]}
-              />
+              /> 
             </div>
           </div>
         </section>
