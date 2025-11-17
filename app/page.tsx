@@ -62,7 +62,7 @@ export default function Page() {
                 </span>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com/" target="_blank">
+                <Link href="https://github.com/CODEWITHRISHU2005" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
@@ -95,20 +95,32 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <ProjectCard
+              <ProjectCard
+                title="VideoStream"
+                description="In this project, I have implemented stream videos in chunks so that user is able to
+play video without downloading completely & store videos and its image in AWS S3"
+                image="/images/Screenshot 2025-11-09 102915.png"
+                link="https://github.com/CODEWITHRISHU2005/Video-Streaming-App"
+                tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ChatClient)", "MySQL", "Swagger API", "Docker", "ffmpeg", "HLS Streaming", "Docker-Volume"]}
+              />
+              <ProjectCard
                 title="SnapBuy"
-                description="A Backend e-commerce platform with lot's of feature that align with the real world e-commerce platform"
+                description="In this project, I learned to implement best security practices (OTT, JWT, RBAC,
+OAuth2), resolve N+1 queries using @EntityGraph, optimize with Redis caching, integrate
+Stripe payments, containerize the app, and plan to deploy it on AWS"
                 image="/images/Screenshot 2025-04-09 215254.png"
                 link="https://github.com/CODEWITHRISHU2005/SnapBuy"
-                tags={["Spring Boot", "Spring Security", "O-Auth2", "Jwt", "OTT", "MySQL", "Swagger API", "Docker", "AWS CodePipeline", "AWS CodeBuild", "CI/CD", "AWS RDS", "AWS ECS", "AWS ECR", "AWS Fargate"]}
+                tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ImageModel-DALL-E, ChatClient)", "MySQL", "Swagger API", "Docker", "Redis Cache", "Stripe"]}
               />
               <ProjectCard
                 title="FlashGPT_4.0"
-                description="An AI-powered chat interface with natural language processing capabilities comparing different LLM models to test accuracy of different models."
+                description="Developed a backend LLM comparison app using Spring Boot and Spring AI
+with RAG, vector database, OAuth2 security, and support for image, audio, and chat-based
+AI interactions"
                 image="/images/Screenshot 2025-06-11 201235.png"
                 link="https://github.com/CODEWITHRISHU2005/Spring_AI"
-                tags={["OpenAI", "Anthropic", "Ollama", "Mistral", "Meta", "Spring Boot", "Spring Security", "OAuth2", "OTT", "MySQL", "Spring-AI", "Next.js", "React.js", "TypeScript"]}
-              /> 
+                tags={["Spring Boot", "Spring AI (RAG, ImageModel, AudioModel, ChatClient, Chat Memory Advisor)", " Spring Security(O-Auth2)"]}
+              />
             </div>
           </div>
         </section>
