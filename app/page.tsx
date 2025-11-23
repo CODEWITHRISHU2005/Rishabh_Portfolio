@@ -96,30 +96,28 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="VideoStream"
+                title="VideoStream (On-Demand Video Streaming)"
                 description="In this project, I have implemented stream videos in chunks so that user is able to
 play video without downloading completely & store videos and its image in AWS S3"
                 image="/images/Screenshot 2025-11-09 102915.png"
                 link="https://github.com/CODEWITHRISHU2005/Video-Streaming-App"
-                tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ChatClient)", "MySQL", "Swagger API", "Docker", "ffmpeg", "HLS Streaming", "Docker-Volume"]}
+                tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ChatClient)", "MySQL", "Swagger API", "Docker", "FFMPEG", "HLS Streaming", "Adaptive Bitrate Streaming", "Docker-Volume", "Docker-Compose"]}
               />
               <ProjectCard
-                title="SnapBuy"
+                title="SnapBuy (E-Commerce App)"
                 description="In this project, I learned to implement best security practices (OTT, JWT, RBAC,
 OAuth2), resolve N+1 queries using @EntityGraph, optimize with Redis caching, integrate
 Stripe payments, containerize the app, and plan to deploy it on AWS"
                 image="/images/Screenshot 2025-04-09 215254.png"
                 link="https://github.com/CODEWITHRISHU2005/SnapBuy"
-                tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ImageModel-DALL-E, ChatClient)", "MySQL", "Swagger API", "Docker", "Redis Cache", "Stripe"]}
+                tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ImageModel-DALL-E, ChatClient)", "MySQL", "Swagger API", "Docker-Compose", "Redis Cache", "Stripe Payment Integration", "AWS"]}
               />
               <ProjectCard
-                title="FlashGPT_4.0"
-                description="Developed a backend LLM comparison app using Spring Boot and Spring AI
-with RAG, vector database, OAuth2 security, and support for image, audio, and chat-based
-AI interactions"
+                title="Smart_ChatBot (Zoho Hackathon)"
+                description="This project builds an AI-powered eCommerce chatbot it enables customers to view daily deals in interactive carousels, place or track orders securely with OAuth 2.0 and OTP verification, and receive personalized recommendations through AI-driven intent recognition. The bot streamlines shopping and support, making the online retail experience faster, smarter, and more engaging."
                 image="/images/Screenshot 2025-06-11 201235.png"
-                link="https://github.com/CODEWITHRISHU2005/Spring_AI"
-                tags={["Spring Boot", "Spring AI (RAG, ImageModel, AudioModel, ChatClient, Chat Memory Advisor)", " Spring Security(O-Auth2)"]}
+                link="https://github.com/CODEWITHRISHU2005/Smart_ChatBot"
+                tags={["Spring Boot", "Spring Data JPA", "Spring AI (ChatClient, ChatMemory Advisor)", "Spring Security (O-Auth2, OTP using Twilio)", "MySQL", "Shopify API", "Zoho Sales IQ", "SMTP (Order Confirmation, Order Cancellation)"]}
               />
             </div>
           </div>
