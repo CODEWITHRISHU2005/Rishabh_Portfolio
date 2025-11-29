@@ -108,7 +108,7 @@ play video without downloading completely & store videos and its image in AWS S3
                 description="In this project, I learned to implement best security practices (OTT, JWT, RBAC,
 OAuth2), resolve N+1 queries using @EntityGraph, optimize with Redis caching, integrate
 Stripe payments, containerize the app, and plan to deploy it on AWS"
-                image="/images/Screenshot 2025-04-09 215254.png"
+                image="/images/Screenshot 2025-11-29 144756.png"
                 link="https://github.com/CODEWITHRISHU2005/SnapBuy"
                 tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ImageModel-DALL-E, ChatClient)", "MySQL", "Swagger API", "Docker-Compose", "Redis Cache", "Stripe Payment Integration", "AWS"]}
               />
