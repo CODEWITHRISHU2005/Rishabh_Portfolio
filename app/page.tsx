@@ -101,6 +101,7 @@ export default function Page() {
 play video without downloading completely & store videos and its image in AWS S3"
                 image="/images/Screenshot 2025-11-09 102915.png"
                 link="https://github.com/CODEWITHRISHU2005/Video-Streaming-App"
+                liveLink="https://video-streaming-app-lac.vercel.app/"
                 tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ChatClient)", "MySQL", "Swagger API", "Docker", "FFMPEG", "HLS Streaming", "Adaptive Bitrate Streaming", "Docker-Volume", "Docker-Compose"]}
               />
               <ProjectCard
@@ -110,6 +111,7 @@ OAuth2), resolve N+1 queries using @EntityGraph, optimize with Redis caching, in
 Stripe payments, containerize the app, and plan to deploy it on AWS"
                 image="/images/Screenshot 2025-11-29 144756.png"
                 link="https://github.com/CODEWITHRISHU2005/SnapBuy"
+                liveLink="https://snap-buy-app.vercel.app/"
                 tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, RBAC)", "Spring AI (ImageModel-DALL-E, ChatClient)", "MySQL", "Swagger API", "Docker-Compose", "Redis Cache", "Stripe Payment Integration", "AWS"]}
               />
               <ProjectCard
