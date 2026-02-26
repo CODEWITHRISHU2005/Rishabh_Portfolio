@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Twitter, Menu, ArrowRight, Download, Sparkles } from "lucide-react"
+import { Github, Linkedin, Mail, Twitter, Menu, ArrowRight, Download, Sparkles, Code2 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import ContactForm from "./components/contact-form"
@@ -164,6 +164,12 @@ export default function Page() {
                 <Button variant="outline" size="icon" className="hover:bg-red-500 hover:text-white transition-all hover:scale-110" aria-label="Send email">
                   <Mail className="h-4 w-4" />
                   <span className="sr-only">Email</span>
+                </Button>
+              </Link>
+              <Link href="https://leetcode.com/u/9DXfajaRfK/" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="icon" className="hover:bg-orange-500 hover:text-white transition-all hover:scale-110" aria-label="Visit LeetCode profile">
+                  <Code2 className="h-4 w-4" />
+                  <span className="sr-only">LeetCode</span>
                 </Button>
               </Link>
             </div>
