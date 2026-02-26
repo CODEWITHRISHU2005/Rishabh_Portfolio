@@ -209,7 +209,7 @@ export default function Page() {
               Integrated Spring AI (RAG) with MongoDB Atlas Vector Search for PDF-based government scheme retrieval.
               Delivered a solution combining robust engineering with social impact, empowering low-literacy users to claim
 benefits."
-              image="images\Screenshot 2026-02-26 113527.png"
+              image="images\Screenshot 2026-02-26 113321.png"
               link="https://github.com/CODEWITHRISHU2005/YojanaSetu"
               tags={["Spring Boot", "Spring AI (Gemini, RAG, MongoDB Atlas Vector Search)"]}
             />
