@@ -204,11 +204,14 @@ export default function Page() {
               tags={["Spring Boot", "Spring Data JPA", "Spring Security (O-Auth2, JWT, OTT, OTP, RBAC)", "Spring AI (ImageModel-DALL-E, ChatClient)", "MySQL", "Swagger API", "Docker-Compose", "Redis Cache", "Stripe Payment Integration", "AWS"]}
             />
             <ProjectCard
-              title="Smart_ChatBot (Zoho Hackathon)"
-              description="This project builds an AI-powered eCommerce chatbot it enables customers to view daily deals in interactive carousels, place or track orders securely with OAuth 2.0 and OTP verification, and receive personalized recommendations through AI-driven intent recognition. The bot streamlines shopping and support, making the online retail experience faster, smarter, and more engaging."
-              image="/images/Screenshot 2025-06-11 201235.png"
-              link="https://github.com/CODEWITHRISHU2005/Smart_ChatBot"
-              tags={["Spring Boot", "Spring Data JPA", "Spring AI (ChatClient, ChatMemory Advisor)", "Spring Security (O-Auth2, OTP using Twilio)", "MySQL", "Shopify API", "Zoho Sales IQ", "SMTP (Order Confirmation, Order Cancellation)"]}
+              title="Yojna Setu (AMD Hackathon by Hack2Skill"
+              description="Built a voice-first, multilingual AI to help rural citizens access welfare gov schemes.
+              Integrated Spring AI (RAG) with MongoDB Atlas Vector Search for PDF-based government scheme retrieval.
+              Delivered a solution combining robust engineering with social impact, empowering low-literacy users to claim
+benefits."
+              image="images\Screenshot 2026-02-26 113527.png"
+              link="https://github.com/CODEWITHRISHU2005/YojanaSetu"
+              tags={["Spring Boot", "Spring AI (Gemini, RAG, MongoDB Atlas Vector Search)"]}
             />
           </div>
         </section>
