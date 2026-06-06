@@ -94,6 +94,57 @@ body {
     background: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
+
+  /* Dot grid background pattern */
+  .bg-dot-grid {
+    background-image: radial-gradient(rgba(var(--foreground-rgb), 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .dark .bg-dot-grid {
+    background-image: radial-gradient(rgba(var(--foreground-rgb), 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Spotlight Card Glow Effect */
+  .spotlight-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .spotlight-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(800px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(var(--primary-rgb), 0.06), transparent 40%);
+    z-index: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  .spotlight-card:hover::before {
+    opacity: 1;
+  }
+
+  /* Floating keyframe and utilities */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+  }
+  
+  .animate-float-1 {
+    animation: float 8s ease-in-out infinite;
+  }
+  .animate-float-2 {
+    animation: float 10s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  .animate-float-3 {
+    animation: float 12s ease-in-out infinite;
+    animation-delay: 4s;
+  }
 }
 
 @layer base {
@@ -131,6 +182,8 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --primary-rgb: 59, 130, 246;
+    --foreground-rgb: 15, 23, 42;
   }
   
   .dark {
@@ -166,6 +219,8 @@ body {
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    --primary-rgb: 96, 165, 250;
+    --foreground-rgb: 248, 250, 252;
   }
 }
 
