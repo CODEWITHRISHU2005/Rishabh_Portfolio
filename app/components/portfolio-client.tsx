@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Github, Linkedin, Mail, Twitter, Menu, X, ArrowRight, Download, Sparkles, Code2, ArrowUp } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import ContactForm from "./contact-form"
 import ProjectCard from "./project-card"
 import TechStack from "./tech-stack"
@@ -26,10 +25,9 @@ export default function PortfolioClient() {
 
   // Role Typewriter/Cycler Setup
   const roles = [
-    "Java Backend Developer",
-    "Spring Boot Expert",
-    "Microservices Architect",
-    "API Developer",
+    "Backend Developer",
+    "Spring Boot Developer",
+    "Software Engineer",
   ]
   const [roleIndex, setRoleIndex] = useState(0)
 
@@ -164,27 +162,13 @@ export default function PortfolioClient() {
         <section id="about" className="relative py-24 md:py-36 lg:py-44 overflow-hidden flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center space-y-10 text-center max-w-4xl mx-auto">
             
-            {/* Profile Image with Dynamic Ping rings */}
+            {/* Name and Badge */}
             <motion.div 
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
               className="flex flex-col items-center space-y-4"
             >
-              <div className="relative group">
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full blur opacity-40 group-hover:opacity-80 transition duration-300 animate-pulse-slow"></div>
-                <div className="relative w-36 h-36 md:w-44 md:h-44">
-                  <Image
-                    alt="Rishabh Gupta"
-                    src="/images/WhatsApp Image 2026-04-18 at 9.44.46 AM.jpeg"
-                    width={176}
-                    height={176}
-                    className="rounded-full object-cover ring-4 ring-background shadow-2xl relative z-20"
-                    priority
-                    quality={100}
-                  />
-                </div>
-              </div>
               <div className="space-y-1 z-20">
                 <h2 className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
                   Rishabh Gupta
@@ -199,7 +183,7 @@ export default function PortfolioClient() {
             {/* Main Animated Title */}
             <div className="space-y-6">
               <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl leading-none">
-                <span className="block text-foreground mb-3">Professional</span>
+                <span className="block text-foreground mb-3">Aspiring</span>
                 <span className="relative block h-[1.15em] overflow-hidden">
                   <AnimatePresence mode="wait">
                     <motion.span
@@ -221,9 +205,8 @@ export default function PortfolioClient() {
                 transition={{ delay: 0.3 }}
                 className="mx-auto max-w-[800px] text-muted-foreground text-base md:text-lg lg:text-xl leading-relaxed font-normal"
               >
-                I specialize in engineering robust <span className="text-foreground font-semibold">scalable backend systems</span>,
-                integrating security frameworks like <span className="text-foreground font-semibold">JWT and OAuth2</span>, and microservices logic with Spring Boot.
-                Focused on caching (Redis), data querying optimization, API speed, and containers (Docker), I build clean architectures that perform under load.
+                An enthusiastic developer passionate about building <span className="text-foreground font-semibold">scalable backend applications</span> using Java & Spring Boot.
+                Eager to apply skills in <span className="text-foreground font-semibold">REST APIs, JWT security, Redis, and Docker</span> to write clean code and deliver impactful solutions.
               </motion.p>
             </div>
 
@@ -291,7 +274,7 @@ export default function PortfolioClient() {
               Featured <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Projects</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-base md:text-lg">
-              Explore complex, highly optimized projects demonstrating deep expertise in backend system performance and integrations.
+              Explore hands-on projects demonstrating practical skills in backend development, API design, and modern framework integrations.
             </p>
           </motion.div>
           

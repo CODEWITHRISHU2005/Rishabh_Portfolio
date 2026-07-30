@@ -2,7 +2,7 @@ import PortfolioClient from "./components/portfolio-client"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Rishabh Gupta - Java Backend Developer | Spring Boot Expert",
+  title: "Rishabh Gupta - Aspiring Java Backend Developer | Spring Boot Developer",
   description: "Passionate Spring Boot developer specializing in scalable backend systems, JWT, OAuth2, microservices, and e-commerce platforms. Experience with Spring Security, Redis, Docker, and AWS.",
   keywords: ["Java Backend Developer", "Spring Boot", "Microservices", "JWT", "OAuth2", "Redis", "Docker", "AWS", "REST API"],
   authors: [{ name: "Rishabh Gupta" }],
