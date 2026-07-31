@@ -2,13 +2,28 @@ import PortfolioClient from "./components/portfolio-client"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Rishabh Gupta - Aspiring Java Backend Developer | Spring Boot Developer",
-  description: "Passionate Spring Boot developer specializing in scalable backend systems, JWT, OAuth2, microservices, and e-commerce platforms. Experience with Spring Security, Redis, Docker, and AWS.",
-  keywords: ["Java Backend Developer", "Spring Boot", "Microservices", "JWT", "OAuth2", "Redis", "Docker", "AWS", "REST API"],
+  title: "Rishabh Gupta - Java Backend Developer | Spring Boot & Security",
+  description: "Java Backend Developer (Fresher) passionate about Spring Boot, Spring Security (JWT, OAuth2, MFA, OTT), HLS Video Streaming, Virtual Threads, Redis, and Spring AI Vector RAG systems.",
+  keywords: [
+    "Rishabh Gupta",
+    "Java Backend Developer",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "OAuth2",
+    "HLS Streaming",
+    "Java Virtual Threads",
+    "MongoDB Atlas Vector Search",
+    "Spring AI RAG",
+    "Redis",
+    "Docker",
+    "LeetCode 600+ DSA",
+    "REST API"
+  ],
   authors: [{ name: "Rishabh Gupta" }],
   openGraph: {
-    title: "Rishabh Gupta - Java Backend Developer",
-    description: "Building scalable backend systems with Spring Boot, microservices, and cloud technologies",
+    title: "Rishabh Gupta - Java Backend Developer Portfolio",
+    description: "Building scalable backend systems with Spring Boot, Spring Security, HLS Streaming, and AI RAG integrations.",
     type: "website",
     locale: "en_US",
   },

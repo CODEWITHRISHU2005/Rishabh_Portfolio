@@ -3,37 +3,57 @@
 import { useState } from "react"
 import { useMotionValue, useMotionTemplate, motion, AnimatePresence } from "framer-motion"
 import { MouseEvent } from "react"
-import { Card } from "@/components/ui/card"
-import { Code2, Server, Cloud, Wrench } from "lucide-react"
+import { Code2, Server, Cloud, Wrench, Database, Cpu, Sparkles, Layers } from "lucide-react"
 
 const technologies = [
   {
-    category: "Backend",
-    icon: Server,
+    category: "Languages",
+    icon: Code2,
+    color: "from-amber-500 to-orange-500",
+    colorRgb: "245, 158, 11",
+    skills: ["Core Java", "Advance Java", "OOPs", "Collections Framework", "Multithreading", "Exception Handling", "SQL"],
+  },
+  {
+    category: "Frameworks",
+    icon: Layers,
     color: "from-green-500 to-emerald-500",
     colorRgb: "16, 185, 129",
-    skills: ["Java (Core, Advance)", "Spring Boot", "Spring AI", "Spring Security", "Spring Data JPA", "MySQL"],
+    skills: ["Spring Boot", "Spring Security", "JWT", "OAuth2", "OTP & OTT", "MFA", "Spring Data JPA", "Spring AI"],
   },
   {
-    category: "Frontend",
-    icon: Code2,
-    color: "from-blue-500 to-cyan-500",
+    category: "Backend & Architecture",
+    icon: Server,
+    color: "from-blue-500 to-indigo-500",
     colorRgb: "59, 130, 246",
-    skills: ["HTML", "TailwindCSS", "JavaScript", "React", "Next.js", "TypeScript"],
+    skills: ["REST APIs", "API Integration", "Authentication & Authorization", "RBAC", "Asynchronous Processing", "Completable Future", "Java Virtual Threads"],
   },
   {
-    category: "DevOps",
+    category: "Cloud & DevOps",
     icon: Cloud,
     color: "from-purple-500 to-pink-500",
     colorRgb: "168, 85, 247",
-    skills: ["Docker (Compose, Volume)", "AWS (RDS, ECS, ECR, S3, CodeBuild, CodePipeline, Fargate)", "CI/CD"],
+    skills: ["Docker", "Docker-Compose", "CloudFlare R2", "CI/CD", "Cloud Deployment"],
   },
   {
-    category: "Tools",
+    category: "Databases & Caching",
+    icon: Database,
+    color: "from-cyan-500 to-blue-600",
+    colorRgb: "6, 182, 212",
+    skills: ["MySQL", "Redis Cache", "MongoDB Atlas Vector Search"],
+  },
+  {
+    category: "Testing & Tools",
     icon: Wrench,
-    color: "from-orange-500 to-red-500",
-    colorRgb: "249, 115, 22",
-    skills: ["Intellij IDEA", "Cursor AI", "Postman", "Insomnia", "Swagger API", "Redis Cache", "Git", "GitHub"],
+    color: "from-rose-500 to-red-500",
+    colorRgb: "244, 63, 94",
+    skills: ["Git", "GitHub", "Swagger / OpenAPI", "Postman", "Logging (SLF4J)"],
+  },
+  {
+    category: "AI & Emerging Tech",
+    icon: Sparkles,
+    color: "from-violet-500 to-purple-600",
+    colorRgb: "139, 92, 246",
+    skills: ["Generative AI", "RAG (Retrieval-Augmented Generation)", "Embeddings", "LLM Integration", "Gemini API"],
   },
 ]
 
@@ -91,7 +111,7 @@ function TechCard({ category, icon: IconComponent, color, colorRgb, skills }: Te
             whileHover={{ scale: 1.05 }}
             className="inline-flex items-center rounded-full bg-background/50 border border-border/80 px-3.5 py-1.5 text-xs font-medium hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-default select-none shadow-sm"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-primary/40 mr-2 group-hover:bg-primary transition-colors duration-300" style={{ backgroundColor: `rgba(${colorRgb}, 0.4)` }} />
+            <span className="w-1.5 h-1.5 rounded-full bg-primary/40 mr-2 group-hover:bg-primary transition-colors duration-300" style={{ backgroundColor: `rgba(${colorRgb}, 0.8)` }} />
             {skill}
           </motion.span>
         ))}
@@ -102,7 +122,7 @@ function TechCard({ category, icon: IconComponent, color, colorRgb, skills }: Te
 
 export default function TechStack() {
   const [activeTab, setActiveTab] = useState("All")
-  const tabs = ["All", "Backend", "Frontend", "DevOps", "Tools"]
+  const tabs = ["All", "Languages", "Frameworks", "Backend & Architecture", "Cloud & DevOps", "Databases & Caching", "Testing & Tools", "AI & Emerging Tech"]
 
   const filteredTech = activeTab === "All" 
     ? technologies 
@@ -111,12 +131,12 @@ export default function TechStack() {
   return (
     <div className="space-y-8">
       {/* Category Tab Buttons */}
-      <div className="flex flex-wrap justify-center gap-2 p-1.5 rounded-xl bg-muted/20 border max-w-lg mx-auto backdrop-blur">
+      <div className="flex flex-wrap justify-center gap-2 p-1.5 rounded-xl bg-muted/20 border max-w-4xl mx-auto backdrop-blur">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`relative px-4 py-2 text-xs md:text-sm font-medium rounded-lg transition-all duration-300 outline-none ${
+            className={`relative px-3.5 py-2 text-xs md:text-sm font-medium rounded-lg transition-all duration-300 outline-none ${
               activeTab === tab 
                 ? "text-primary-foreground font-semibold" 
                 : "text-muted-foreground hover:text-foreground"

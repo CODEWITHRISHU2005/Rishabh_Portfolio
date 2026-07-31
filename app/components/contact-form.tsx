@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
 import { submitContactForm } from "../actions"
-import { Loader2, CheckCircle2, AlertCircle, Mail, MapPin, Sparkles, Copy, Check, Github, Linkedin, Twitter, Code2 } from "lucide-react"
+import { Loader2, CheckCircle2, AlertCircle, Mail, MapPin, Phone, Copy, Check, Github, Linkedin, Twitter, Code2 } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function ContactForm() {
@@ -15,7 +15,9 @@ export default function ContactForm() {
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null)
   const [copied, setCopied] = useState(false)
 
-  const emailAddress = "rg2822046@gmail.com"
+  const emailAddress = "rg2822045@gmail.com"
+  const phoneNumber = "(+91) 9545142000"
+  const locationText = "Dehradun, Uttarakhand, India"
 
   async function handleCopyEmail() {
     try {
@@ -91,7 +93,7 @@ export default function ContactForm() {
             </div>
           </div>
 
-          {/* Card 2: Location & Availability */}
+          {/* Card 2: Location & Phone */}
           <div className="p-6 rounded-2xl border border-border/80 bg-card/30 backdrop-blur-md relative group overflow-hidden transition-all duration-300 hover:border-primary/30 hover:shadow-lg">
             <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-25 transition-opacity duration-300">
               <MapPin className="w-24 h-24 text-primary" />
@@ -100,17 +102,24 @@ export default function ContactForm() {
               <div className="p-2.5 rounded-xl bg-primary/10 text-primary">
                 <MapPin className="h-5 w-5" />
               </div>
-              <h3 className="font-semibold text-lg">Location</h3>
+              <h3 className="font-semibold text-lg">Location & Phone</h3>
             </div>
-            <p className="text-sm text-muted-foreground mb-4 relative z-10 leading-relaxed">
-              Based in India, available for both local work and remote collaborations globally.
-            </p>
+            <div className="space-y-2 text-sm text-muted-foreground relative z-10 mb-4">
+              <p className="flex items-center gap-2 font-medium text-foreground">
+                <MapPin className="h-4 w-4 text-primary shrink-0" />
+                {locationText}
+              </p>
+              <p className="flex items-center gap-2 font-medium text-foreground">
+                <Phone className="h-4 w-4 text-primary shrink-0" />
+                {phoneNumber}
+              </p>
+            </div>
             <div className="flex items-center gap-2 text-sm font-medium text-foreground relative z-10">
               <span className="flex h-2.5 w-2.5 relative">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
               </span>
-              <span>Available for opportunities</span>
+              <span>Available for Backend Roles & Work</span>
             </div>
           </div>
         </div>
