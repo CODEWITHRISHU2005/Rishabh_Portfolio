@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Java Virtual Threads",
     "MongoDB Atlas Vector Search",
     "Spring AI RAG",
-    "Redis",
+    "Redis Cache",
     "Docker",
     "LeetCode 600+ DSA",
     "REST API"

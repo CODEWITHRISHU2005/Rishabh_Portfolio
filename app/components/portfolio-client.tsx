@@ -352,7 +352,7 @@ export default function PortfolioClient() {
                 "Improved API performance with Redis caching, pagination, and sorting.",
                 "Integrated Stripe Payment Gateway for secure online payments."
               ]}
-              image="/images/Screenshot 2025-11-29 144756.png"
+              image="/images/Screenshot 2026-06-16 104619.png"
               link="https://github.com/CODEWITHRISHU2005/SnapBuy"
               liveLink="https://snap-buy-app.vercel.app/"
               tags={["Core Java", "Spring Boot", "Spring Security", "Spring AI", "MongoDB Atlas Vector Search", "Redis Cache", "Stripe", "MySQL", "Docker-Compose"]}
@@ -369,7 +369,7 @@ export default function PortfolioClient() {
                 "Integrated Spring AI (RAG) with MongoDB Atlas Vector Search for PDF government document retrieval.",
                 "Empowered low-literacy citizens to discover and claim government welfare benefits easily."
               ]}
-              image="/images/Screenshot 2026-02-26 113527.png"
+              image="/images/Screenshot 2026-06-16 105615.png"
               link="https://github.com/CODEWITHRISHU2005/YojanaSetu"
               tags={["Core Java", "Spring Boot", "Spring AI", "Gemini API", "RAG", "MongoDB Atlas Vector Search", "REST APIs"]}
             />
