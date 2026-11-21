@@ -41,7 +41,7 @@ export default function EducationCertifications() {
                 </span>
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 text-xs font-bold text-emerald-600 dark:text-emerald-400">
                   <Sparkles className="h-3.5 w-3.5" />
-                  CGPA: 8.5
+                  CGPA: 8.0
                 </span>
               </div>
 
@@ -119,7 +119,7 @@ export default function EducationCertifications() {
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
-                        <span className="text-lg font-extrabold text-foreground">600+ DSA Problems Solved</span>
+                        <span className="text-lg font-extrabold text-foreground">700+ DSA Problems Solved</span>
                         <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400">LeetCode</span>
                       </div>
                       <p className="text-xs text-muted-foreground mt-1">
@@ -133,50 +133,64 @@ export default function EducationCertifications() {
             </Link>
 
             {/* Certification Card 1: Oracle AI */}
-            <div className="rounded-2xl border border-border/80 bg-card/40 backdrop-blur-md p-5 relative overflow-hidden transition-all duration-300 hover:border-primary/40 hover:shadow-lg group">
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex items-center gap-3.5">
-                  <div className="p-3 rounded-xl bg-red-500/10 text-red-500 group-hover:scale-110 transition-transform">
-                    <Award className="h-6 w-6" />
+            <Link
+              href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=138ECB7A778D94BBCEC5463DD26A413B7B807C72019473E8BAF752FEA8DFEEAC"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <div className="rounded-2xl border border-border/80 bg-card/40 backdrop-blur-md p-5 relative overflow-hidden transition-all duration-300 hover:border-red-500/50 hover:shadow-lg hover:shadow-red-500/10">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-center gap-3.5">
+                    <div className="p-3 rounded-xl bg-red-500/10 text-red-500 group-hover:scale-110 transition-transform">
+                      <Award className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h5 className="text-base font-bold text-foreground group-hover:text-red-500 dark:group-hover:text-red-400 transition-colors">
+                        Oracle Certified AI Foundations Associate
+                      </h5>
+                      <p className="text-xs text-muted-foreground mt-0.5">
+                        Issued by Oracle • AI & Machine Learning Foundations
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h5 className="text-base font-bold text-foreground group-hover:text-primary transition-colors">
-                      Oracle Certified AI Foundations Associate
-                    </h5>
-                    <p className="text-xs text-muted-foreground mt-0.5">
-                      Issued by Oracle • AI & Machine Learning Foundations
-                    </p>
+                  <div className="flex items-center gap-1.5 shrink-0 text-xs font-medium text-red-500">
+                    <span>Verify</span>
+                    <ExternalLink className="h-3.5 w-3.5 text-muted-foreground group-hover:text-red-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                   </div>
                 </div>
-                <span className="inline-flex items-center gap-1 text-xs font-medium text-primary shrink-0">
-                  <Award className="h-3.5 w-3.5 text-red-500" />
-                  Certified
-                </span>
               </div>
-            </div>
+            </Link>
 
             {/* Certification Card 2: SAP Generative AI */}
-            <div className="rounded-2xl border border-border/80 bg-card/40 backdrop-blur-md p-5 relative overflow-hidden transition-all duration-300 hover:border-primary/40 hover:shadow-lg group">
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex items-center gap-3.5">
-                  <div className="p-3 rounded-xl bg-blue-500/10 text-blue-500 group-hover:scale-110 transition-transform">
-                    <Award className="h-6 w-6" />
+            <Link
+              href="https://www.credly.com/badges/6a89e3c9-2264-4719-a5cd-459dc04841e8/linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <div className="rounded-2xl border border-border/80 bg-card/40 backdrop-blur-md p-5 relative overflow-hidden transition-all duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-center gap-3.5">
+                    <div className="p-3 rounded-xl bg-blue-500/10 text-blue-500 group-hover:scale-110 transition-transform">
+                      <Award className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h5 className="text-base font-bold text-foreground group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
+                        SAP Certified - SAP Generative AI Developer
+                      </h5>
+                      <p className="text-xs text-muted-foreground mt-0.5">
+                        Issued by SAP • Generative AI Development & LLM Systems
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h5 className="text-base font-bold text-foreground group-hover:text-primary transition-colors">
-                      SAP Certified - SAP Generative AI Developer
-                    </h5>
-                    <p className="text-xs text-muted-foreground mt-0.5">
-                      Issued by SAP • Generative AI Development & LLM Systems
-                    </p>
+                  <div className="flex items-center gap-1.5 shrink-0 text-xs font-medium text-blue-500">
+                    <span>Verify</span>
+                    <ExternalLink className="h-3.5 w-3.5 text-muted-foreground group-hover:text-blue-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                   </div>
                 </div>
-                <span className="inline-flex items-center gap-1 text-xs font-medium text-primary shrink-0">
-                  <Award className="h-3.5 w-3.5 text-blue-500" />
-                  Certified
-                </span>
               </div>
-            </div>
+            </Link>
 
           </div>
         </motion.div>

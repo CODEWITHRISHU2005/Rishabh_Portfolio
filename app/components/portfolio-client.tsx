@@ -235,10 +235,10 @@ export default function PortfolioClient() {
               className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-3xl pt-2"
             >
               {[
-                { metric: "600+", label: "LeetCode DSA Solved", sub: "DP, Graphs, Trees", color: "from-amber-500/20 to-orange-500/20", borderColor: "border-amber-500/30" },
-                { metric: "8.5", label: "CGPA (BCA)", sub: "Graphic Era University", color: "from-emerald-500/20 to-teal-500/20", borderColor: "border-emerald-500/30" },
+                { metric: "700+", label: "LeetCode DSA Solved", sub: "DP, Graphs, Trees", color: "from-amber-500/20 to-orange-500/20", borderColor: "border-amber-500/30" },
+                { metric: "8.0", label: "CGPA (BCA)", sub: "Graphic Era University", color: "from-emerald-500/20 to-teal-500/20", borderColor: "border-emerald-500/30" },
                 { metric: "60%", label: "Load Time Reduction", sub: "HLS Chunk Streaming", color: "from-blue-500/20 to-indigo-500/20", borderColor: "border-blue-500/30" },
-                { metric: "3+", label: "Production Projects", sub: "Spring Boot & AI RAG", color: "from-purple-500/20 to-pink-500/20", borderColor: "border-purple-500/30" },
+                { metric: "2+", label: "Production Projects", sub: "Spring Boot & AI RAG", color: "from-purple-500/20 to-pink-500/20", borderColor: "border-purple-500/30" },
               ].map((stat, i) => (
                 <div 
                   key={i} 
@@ -356,22 +356,6 @@ export default function PortfolioClient() {
               link="https://github.com/CODEWITHRISHU2005/SnapBuy"
               liveLink="https://snap-buy-app.vercel.app/"
               tags={["Core Java", "Spring Boot", "Spring Security", "Spring AI", "MongoDB Atlas Vector Search", "Redis Cache", "Stripe", "MySQL", "Docker-Compose"]}
-            />
-
-            {/* Project 3: Yojna Setu */}
-            <ProjectCard
-              title="Yojna Setu"
-              subtitle="Voice-First Multilingual AI Government Scheme Access (AMD Hackathon)"
-              date="Feb 2026 – March 2026"
-              description="Developed at AMD Hackathon by Hack2Skill: Voice-first AI assistant leveraging Spring AI RAG to enable low-literacy citizens to claim welfare schemes."
-              highlights={[
-                "Built voice-first, multilingual AI helping rural citizens access welfare government schemes.",
-                "Integrated Spring AI (RAG) with MongoDB Atlas Vector Search for PDF government document retrieval.",
-                "Empowered low-literacy citizens to discover and claim government welfare benefits easily."
-              ]}
-              image="/images/Screenshot 2026-06-16 105615.png"
-              link="https://github.com/CODEWITHRISHU2005/YojanaSetu"
-              tags={["Core Java", "Spring Boot", "Spring AI", "Gemini API", "RAG", "MongoDB Atlas Vector Search", "REST APIs"]}
             />
           </div>
         </section>

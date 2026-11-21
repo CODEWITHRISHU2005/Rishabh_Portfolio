@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Spring AI RAG",
     "Redis Cache",
     "Docker",
-    "LeetCode 600+ DSA",
+    "LeetCode 700+ DSA",
     "REST API"
   ],
   authors: [{ name: "Rishabh Gupta" }],

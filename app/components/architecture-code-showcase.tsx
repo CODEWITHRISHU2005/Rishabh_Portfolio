@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Cpu, Workflow, Code2, Server, ArrowRight, ShieldCheck, Sparkles, Database, Layers, Check } from "lucide-react"
+import { Cpu, Workflow, Code2, Server, ArrowRight, ShieldCheck, Database, Layers, Check } from "lucide-react"
 
 const architectureFlows = [
   {
@@ -100,54 +100,6 @@ public class SecurityConfig {
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
-    }
-}`,
-    codeLanguage: "java",
-  },
-  {
-    id: "yojana-rag",
-    title: "YojanaSetu AI Vector RAG",
-    subtitle: "ChatService.java (PDF Document Ingestion & Spring AI)",
-    repoLink: "https://github.com/CODEWITHRISHU2005/YojanaSetu",
-    fileName: "ChatService.java",
-    steps: [
-      { step: "1", title: "PDF Scheme Ingestion", desc: "Scans classpath:schemes/*.pdf and ingests government policy docs into VectorStore.", icon: Code2, color: "text-amber-500 bg-amber-500/10 border-amber-500/20" },
-      { step: "2", title: "Filter & Similarity Search", desc: "Executes similaritySearch with threshold score 0.65d against Atlas Vector Store.", icon: Database, color: "text-green-500 bg-green-500/10 border-green-500/20" },
-      { step: "3", title: "Context Aggregation", desc: "Extracts formatted document content & aggregates policy details for prompt context.", icon: Sparkles, color: "text-pink-500 bg-pink-500/10 border-pink-500/20" },
-      { step: "4", title: "Reactive Stream Prompt", desc: "Returns reactive Flux<String> response from Spring AI ChatClient to rural users.", icon: Workflow, color: "text-cyan-500 bg-cyan-500/10 border-cyan-500/20" },
-    ],
-    codeSnippet: `// Exact Code from: YojanaSetu/src/main/java/.../service/ChatService.java
-@Service
-@Slf4j
-public class ChatService {
-
-    @Value("classpath:schemes/*.pdf")
-    private Resource[] pdfResource;
-
-    private final VectorStore vectorStore;
-    private final ChatClient chatClient;
-
-    public Flux<String> getRAGResponse(String userQuery) {
-        String query = userQuery.trim();
-        List<Document> docs = vectorStore.similaritySearch(
-                SearchRequest.builder()
-                        .query(query)
-                        .topK(6)
-                        .similarityThreshold(0.65d)
-                        .build()
-        );
-
-        if (docs.isEmpty())
-            return Flux.just("I couldn't find relevant information.");
-
-        String context = docs.stream()
-                .map(Document::getFormattedContent)
-                .collect(Collectors.joining("\\n\\n"));
-
-        return chatClient.prompt()
-                .user(userQuery)
-                .call()
-                .contentStream();
     }
 }`,
     codeLanguage: "java",
